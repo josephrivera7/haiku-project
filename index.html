@@ -7,90 +7,90 @@
 	</head>
   <body>
     <style>
-      html{
+      html {
         background: #154447;
       }
-      #computer{
-        position: absolute;
-        margin: auto;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      
+      div {
+        background-color: #2ff029;
+        height: 10%;
+        width: 50%;
+        border-radius: 20px;
+        animation: changeColor 5s ease-in-out infinite alternate;
+        align-content: center;
       }
       
-      #monitor{
-        background: gray;
-        width: 75%;
-        padding: 15px;
-        border-radius: 10px;
-      }
-      #screen {
-        background: black;
-        height: 45%;
-        width: 90%;
-        justify-content: center;
-        margin: 10px auto;
-        border-radius: 10px;
+      #Title {
+        margin: 0;
       }
       
-/*       #neck{
-        background: gray;
-        height: 15%;
-        width: 20%;
-        border-radius: 10px;
-      } */
+       #Line1 {
+        margin: 15% 10% 10px;
+      }
       
-      h1{
-        margin: auto auto 20px auto;
+      #Line2 {
+        margin: 20% 30% 10px;
+      }
+      
+      #Line3 {
+        margin: 30% 50% 10px;
+      }
+      
+      h1 {
         display: flex;
         justify-content: center;
         color: white
       }
       
-      p{
-        margin: auto;
+      p {
         display: flex;
         justify-content: center;
         font-size: 30px;
         color: white;
       }
       
-      a{
-        margin: auto;
+      a {
         display: flex;
         justify-content: center;
         font-size: 30px;
-        color: yellow;
+        color: white;
       }
       
+    @keyframes changeColor {
+      0% {
+          background-color: #2ff029;
+      }
+      50% {
+          background-color: #7fed7b;
+      }
+      100% {
+          background-color: #c3f5c1;
+      }
+    }
+    
       
-      
+    
     </style>
-    <div id="computer">
-      <div id="monitor">
-        <div id="Screen">
-          <h1>
-            Haiku Project
-          </h1>
-          <p>
-            Lost in the static,
-          </p>
-            <br>
-          <p>
-            Screens hold life's frantic pace,
-          </p>
-            <br>
-          <a href="https://mtgladden.github.io/MAADHK/">Real connections fade.</a>
-        </div>
+
+      <div id="Title">
+        <h1>
+          Haiku Project
+        </h1>
       </div>
-      <div id="neck">
+      <div id="Line1">
+        <p>
+          Lost in the static,
+        </p>
       </div>
-      <div id="keyboard">
+      <div id="Line2">
+        <p>
+          Screens hold life's frantic pace,
+        </p>
       </div>
-    </div>
+      <div id="Line3">
+        <a href="https://mtgladden.github.io/MAADHK/">
+          Real connections fade.
+        </a>
+      </div>
     </body>
 </html>
